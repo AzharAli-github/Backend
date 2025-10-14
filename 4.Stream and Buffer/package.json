@@ -1,0 +1,11 @@
+{
+  "name": "21.stream-and-buffer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Azhar Ali",
+  "license": "ISC",
+  "description": ""
+}
