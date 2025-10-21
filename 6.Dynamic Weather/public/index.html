@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Weather Forecast App</h1>
+        </header>
+
+        <div class="search-section">
+            <div class="search-container">
+                <input type="text" id="cityInput" placeholder="Enter city name (e.g., Gilgit, PK)" value="Gilgit, PK">
+                <button id="searchBtn">Get Weather</button>
+            </div>
+        </div>
+
+        <div class="loading" id="loading" style="display: none;">
+            <div class="spinner"></div>
+            <p>Loading weather data...</p>
+        </div>
+
+        <div class="error-message" id="errorMessage" style="display: none;"></div>
+
+        <!-- Current Weather Card -->
+        <div class="weather-card current-weather" id="currentWeather" style="display: none;">
+            <div class="card-header">
+                <h2>Current Weather</h2>
+                <div class="location" id="currentLocation"></div>
+            </div>
+            <div class="weather-main">
+                <div class="temperature" id="currentTemp"></div>
+                <div class="weather-icon">
+                    <img id="currentIcon" src="/placeholder.svg" alt="Weather icon">
+                </div>
+                <div class="weather-description" id="currentDescription"></div>
+            </div>
+            <div class="weather-details">
+                <div class="detail-item">
+                    <span class="label">Feels like:</span>
+                    <span id="feelsLike"></span>
+                </div>
+                <div class="detail-item">
+                    <span class="label">Humidity:</span>
+                    <span id="humidity"></span>
+                </div>
+                <div class="detail-item">
+                    <span class="label">Wind Speed:</span>
+                    <span id="windSpeed"></span>
+                </div>
+                <div class="detail-item">
+                    <span class="label">Pressure:</span>
+                    <span id="pressure"></span>
+                </div>
+                <div class="detail-item">
+                    <span class="label">Visibility:</span>
+                    <span id="visibility"></span>
+                </div>
+                <div class="detail-item">
+                    <span class="label">Sunrise:</span>
+                    <span id="sunrise"></span>
+                </div>
+                <div class="detail-item">
+                    <span class="label">Sunset:</span>
+                    <span id="sunset"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 5-Day Forecast -->
+        <div class="forecast-section" id="forecastSection" style="display: none;">
+            <h2>5-Day Forecast</h2>
+            <div class="forecast-container" id="forecastContainer">
+                <!-- Forecast cards will be dynamically generated here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
