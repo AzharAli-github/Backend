@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "express": "^5.1.0",
+    "hbs": "^4.2.0",
+    "mongoose": "^8.19.1",
+    "nodemon": "^3.1.10"
+  },
+  "name": "nodedynamic",
+  "version": "1.0.0",
+  "description": "This is a fully responsice dynamic website built with HTML, CSS, Node.js, Express.js, and MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/app.js -e js,hbs"
+  },
+  "author": "Azhar Ali",
+  "license": "ISC"
+}
